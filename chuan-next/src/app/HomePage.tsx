@@ -129,14 +129,14 @@ export default function HomePage() {
                       <span className="sm:hidden">桌面</span>
                       {!isSupported && <span className="text-xs opacity-60">*</span>}
                     </TabsTrigger>
-//                    <TabsTrigger
-//                      value="wechat"
-//                      className="flex items-center justify-center space-x-2 px-3 py-3 text-sm font-medium rounded-lg transition-all duration-200 hover:bg-slate-50 data-[state=active]:bg-green-500 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:hover:bg-green-600"
-//                    >
-//                      <Users className="w-4 h-4" />
-//                      <span className="hidden sm:inline">微信群</span>
-//                      <span className="sm:hidden">微信</span>
-//                    </TabsTrigger>
+{/*                    <TabsTrigger
+                      value="wechat"
+                     className="flex items-center justify-center space-x-2 px-3 py-3 text-sm font-medium rounded-lg transition-all duration-200 hover:bg-slate-50 data-[state=active]:bg-green-500 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:hover:bg-green-600"
+                    >
+                      <Users className="w-4 h-4" />
+                      <span className="hidden sm:inline">微信群</span>
+                      <span className="sm:hidden">微信</span>
+                    </TabsTrigger> */}
                     <TabsTrigger
                       value="settings"
                       className="flex items-center justify-center space-x-2 px-3 py-3 text-sm font-medium rounded-lg transition-all duration-200 hover:bg-slate-50 data-[state=active]:bg-orange-500 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:hover:bg-orange-600"
