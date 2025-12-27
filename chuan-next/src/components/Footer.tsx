@@ -42,7 +42,7 @@ export default function Footer() {
           </a>
           
           <a 
-            href="https://github.com/MatrixSeven/file-transfer-go/issues" 
+            href="https://github.com/luanshixiaoyao/file-transfer-go/issues" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-slate-500 hover:text-orange-500 transition-colors duration-200 flex items-center gap-1"
