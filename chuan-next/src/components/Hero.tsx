@@ -17,7 +17,7 @@ export default function Hero() {
       {/* GitHub开源链接和帮助 */}
       <div className="flex items-center justify-center gap-2 mb-4">
         <a 
-          href="https://github.com/MatrixSeven/file-transfer-go" 
+          href="https://github.com/luanshixiaoyao/file-transfer-go" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 px-3 py-1.5 text-xs sm:text-sm text-slate-600 hover:text-slate-800 bg-slate-100 hover:bg-slate-200 rounded-full transition-colors duration-200 border border-slate-200 hover:border-slate-300"
