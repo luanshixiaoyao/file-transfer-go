@@ -15,7 +15,7 @@ export default function Hero() {
       </p>
       
       {/* GitHub开源链接和帮助 */}
-      {/*<div className="flex items-center justify-center gap-2 mb-4">
+      <div className="flex items-center justify-center gap-2 mb-4">
         <a 
           href="https://github.com/luanshixiaoyao/file-transfer-go" 
           target="_blank" 
@@ -33,7 +33,7 @@ export default function Hero() {
           <HelpCircle className="w-3 h-3 sm:w-4 sm:h-4" />
           <span className="font-medium">使用帮助</span>
         </Link>
-      </div>*/}
+      </div>
       
       {/* 分割线 */}
       <div className="w-full max-w-2xl h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 mx-auto mt-2 mb-2 opacity-60"></div>
