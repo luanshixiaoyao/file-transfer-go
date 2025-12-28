@@ -21,7 +21,7 @@ export default function Footer() {
             帮助
           </Link>
           
-          <a 
+          {/*<a 
             href="https://github.com/luanshixiaoyao/file-transfer-go" 
             target="_blank" 
             rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function Footer() {
           >
             <Bug className="w-3.5 h-3.5" />
             Issue
-          </a>
+          </a>*/}
         </div>
         
         {/* 版权信息 */}
