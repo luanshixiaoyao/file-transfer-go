@@ -158,7 +158,7 @@ export default function HelpPage() {
     { id: 'port-config', title: '自定义端口配置', icon: <Settings className="w-5 h-5 text-blue-600" /> },
     { id: 'security', title: '全局域网部署', icon: <Shield className="w-5 h-5 text-blue-600" /> },
     { id: 'data-transfer', title: '数据传输机制', icon: <Wifi className="w-5 h-5 text-blue-600" /> },
-    { id: 'contact', title: '交流反馈群', icon: <Users className="w-5 h-5 text-blue-600" /> },
+
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -395,15 +395,11 @@ export default function HelpPage() {
                 <div className="space-y-6">
                   <div>
                     <h4 className="text-lg font-semibold mb-3">方法一：使用 Docker Compose（推荐）</h4>
-                    <CodeBlock code={`git clone https://github.com/MatrixSeven/file-transfer-go.git
+                    <CodeBlock code={`git clone https://github.com/luanshixiaoyao/file-transfer-go.git
 cd file-transfer-go
 docker-compose up -d`} />
                   </div>
 
-                  <div>
-                    <h4 className="text-lg font-semibold mb-3">方法二：直接使用 Docker 镜像</h4>
-                    <CodeBlock code={`docker run -d -p 8080:8080 --name file-transfer-go matrixseven/file-transfer-go:latest`} />
-                  </div>
 
                   <InfoBox type="tip" title="部署提示">
                     <ul className="list-disc list-inside space-y-1">
@@ -426,7 +422,7 @@ docker-compose up -d`} />
                     <h4 className="text-lg font-semibold mb-3">下载预编译版本</h4>
                     <p className="text-gray-700 mb-3">
                       前往 <a 
-                        href="https://github.com/MatrixSeven/file-transfer-go/releases/" 
+                        href="https://github.com/luanshixiaoyao/file-transfer-go/releases/" 
                         className="text-blue-600 hover:underline inline-flex items-center gap-1"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -486,7 +482,7 @@ file-transfer-server-windows-amd64.exe`} />
 
                   <div>
                     <h4 className="text-lg font-semibold mb-3">构建步骤</h4>
-                    <CodeBlock code={`git clone https://github.com/MatrixSeven/file-transfer-go.git
+                    <CodeBlock code={`git clone https://github.com/luanshixiaoyao/file-transfer-go.git
 cd file-transfer-go
 ./build-fullstack.sh 
 ./dist/file-transfer-go`} />
@@ -677,83 +673,7 @@ cd file-transfer-go
           </Section>
 
           {/* 交流反馈 */}
-          <Section id="contact" title="交流反馈" icon={<Users className="w-6 h-6 text-blue-600" />}>
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold mb-3">交流群组</h3>
-                <div className="flex flex-col md:flex-row gap-6 items-start">
-                  <div className="flex-1">
-                    <p className="text-gray-700 mb-4">
-                      欢迎加入我们的交流群，获取最新更新、技术支持和经验分享：
-                    </p>
-                    <ul className="list-disc list-inside space-y-2 text-gray-700">
-                      <li>报告问题和建议</li>
-                      <li>获取使用帮助</li>
-                      <li>分享部署经验</li>
-                      <li>了解新功能动态</li>
-                    </ul>
-                  </div>
-                  <div className="flex-shrink-0">
-                    <div className="bg-gray-50 rounded-lg p-4 text-center">
-                      <img 
-                        src="https://cdn-img.luxika.cc//i/2025/09/04/68b8f0d135edc.png" 
-                        alt="交流反馈群二维码" 
-                        className="w-32 h-32 mx-auto rounded-lg"
-                      />
-                      <p className="text-sm text-gray-600 mt-2">扫码加入交流群</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div>
-                <h3 className="text-lg font-semibold mb-3">其他联系方式</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="border rounded-lg p-4">
-                    <h4 className="font-semibold mb-2 flex items-center gap-2">
-                      <ExternalLink className="w-5 h-5 text-blue-600" />
-                      GitHub Issues
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-2">提交 Bug 报告和功能请求</p>
-                    <a 
-                      href="https://github.com/MatrixSeven/file-transfer-go/issues" 
-                      className="text-blue-600 hover:underline text-sm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      前往 Issues 页面 →
-                    </a>
-                  </div>
-                  <div className="border rounded-lg p-4">
-                    <h4 className="font-semibold mb-2 flex items-center gap-2">
-                      <Book className="w-5 h-5 text-green-600" />
-                      项目文档
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-2">查看详细的技术文档</p>
-                    <a 
-                      href="https://github.com/MatrixSeven/file-transfer-go" 
-                      className="text-blue-600 hover:underline text-sm"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      前往项目主页 →
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <InfoBox type="tip" title="反馈建议">
-                <p>为了更好地帮助您解决问题，请在反馈时提供：</p>
-                <ul className="list-disc list-inside space-y-1 mt-2">
-                  <li>详细的问题描述和复现步骤</li>
-                  <li>部署环境信息（Docker/二进制/自构建）</li>
-                  <li>浏览器类型和版本</li>
-                  <li>网络环境（内网/公网/NAT类型）</li>
-                  <li>相关的错误日志或截图</li>
-                </ul>
-              </InfoBox>
-            </div>
-          </Section>
         </div>
       </div>
     </div>
