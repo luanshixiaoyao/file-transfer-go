@@ -33,7 +33,7 @@ FROM golang:1.21-alpine AS go-builder
 # 安装构建依赖
 RUN apk add --no-cache git ca-certificates tzdata
 
-ENV GOPROXY=https://proxy.golang.org,direct
+ENV GOPROXY=https://mirrors.aliyun.com/goproxy/,direct
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GOARCH=amd64
